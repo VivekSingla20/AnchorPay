@@ -1,0 +1,42 @@
+[
+  {
+    "scenario": "1_llm_malformed_output",
+    "passed": true,
+    "detail": "classifier fell back cleanly: 'deterministic fallback: no LLM configured, or the call failed; unresolved reason routed to INVESTIGATE regardless', actor=deterministic"
+  },
+  {
+    "scenario": "2_llm_timeout_or_rate_limit",
+    "passed": true,
+    "detail": "selector fell back to deterministic choice under a simulated timeout: pre_debit_notice"
+  },
+  {
+    "scenario": "3_npci_stats_file_unavailable",
+    "passed": true,
+    "detail": "degraded to system-wide fallback (confidence=system_wide_fallback), recorded error: FileNotFoundError: [Errno 2] No such file or directory: 'C:\\\\Users\\\\singl\\\\Downloads\\\\razorPay\\\\data\\\\npci\\\\does_not_exist.csv'"
+  },
+  {
+    "scenario": "4_downtime_api_unreachable",
+    "passed": true,
+    "detail": "ran to completion with downtime_records=None, final_status=halted"
+  },
+  {
+    "scenario": "5_unrecognised_reason",
+    "passed": true,
+    "detail": "normalised to FailureReason.UNKNOWN, raw text preserved as 'some_new_code_razorpay_invented_next_quarter' (normalised)"
+  },
+  {
+    "scenario": "6_clock_boundary_edge_cases",
+    "passed": true,
+    "detail": "13:00 boundary: scheduled_at=1798019140 legal=True; 23:59:50 near-midnight: scheduled_at=1798050590 legal=True (India has no DST \u2014 not applicable)"
+  },
+  {
+    "scenario": "7_duplicate_webhook_delivery",
+    "passed": true,
+    "detail": "first='normalised', second='duplicate webhook delivery for pay_scenario7_dup - ignored (idempotent)'"
+  },
+  {
+    "scenario": "8_optout_between_scheduling_and_execution",
+    "passed": true,
+    "detail": "final_status=stopped, stopped_reason='guardrail vetoed at execution time: customer opted out before this execution time; a debit with no valid post-debit notice path is not legal (INV-07/INV-08).', post-opt-out executions=0 (must be 0)"
+  }
+]

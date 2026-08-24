@@ -1,0 +1,22 @@
+{
+  "engine_both_heuristics": {
+    "recovered_paise": 791754724,
+    "at_risk_paise": 1337126431,
+    "recovery_rate": 0.5921
+  },
+  "engine_salary_cycle_only": {
+    "recovered_paise": 779130241,
+    "at_risk_paise": 1337126431,
+    "recovery_rate": 0.5827
+  },
+  "engine_bank_health_only": {
+    "recovered_paise": 791355849,
+    "at_risk_paise": 1337126431,
+    "recovery_rate": 0.5918
+  },
+  "engine_neither_heuristic_(=B3)": {
+    "recovered_paise": 778731366,
+    "at_risk_paise": 1337126431,
+    "recovery_rate": 0.5824
+  }
+}

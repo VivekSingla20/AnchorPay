@@ -1,0 +1,318 @@
+[
+  {
+    "strategy": "B0_no_recovery",
+    "split": "train",
+    "n_records": 640,
+    "wall_clock_seconds": 0.0913,
+    "throughput_records_per_min": 420662.4,
+    "at_risk_paise": 1337126431,
+    "recovered_paise": 0,
+    "leaked_paise": 1337126431,
+    "recovery_rate": 0.0,
+    "mandates_recovered": 0,
+    "mandates_halted": 640,
+    "mandates_stopped_other": 0,
+    "violations_total": 0,
+    "violations_by_invariant": {},
+    "retries_consumed_total": 0,
+    "retries_consumed_mean": 0.0,
+    "retries_wasted_on_terminal": 0,
+    "interventions_by_type": {},
+    "dark_pattern_rejections": 0,
+    "stopping_reasons": {
+      "attempt_budget_exhausted": 640
+    }
+  },
+  {
+    "strategy": "B1_naive_retry",
+    "split": "train",
+    "n_records": 640,
+    "wall_clock_seconds": 0.1904,
+    "throughput_records_per_min": 201699.8,
+    "at_risk_paise": 1337126431,
+    "recovered_paise": 970283189,
+    "leaked_paise": 366843242,
+    "recovery_rate": 0.7256,
+    "mandates_recovered": 447,
+    "mandates_halted": 193,
+    "mandates_stopped_other": 0,
+    "violations_total": 4211,
+    "violations_by_invariant": {
+      "INV-01": 371,
+      "INV-03": 108,
+      "INV-06": 1114,
+      "INV-07": 1309,
+      "INV-14": 1309
+    },
+    "retries_consumed_total": 1309,
+    "retries_consumed_mean": 2.045,
+    "retries_wasted_on_terminal": 108,
+    "interventions_by_type": {},
+    "dark_pattern_rejections": 0,
+    "stopping_reasons": {
+      "recovered": 447,
+      "attempt_budget_exhausted": 193
+    }
+  },
+  {
+    "strategy": "B2_fixed_schedule",
+    "split": "train",
+    "n_records": 640,
+    "wall_clock_seconds": 0.2056,
+    "throughput_records_per_min": 186741.9,
+    "at_risk_paise": 1337126431,
+    "recovered_paise": 958744287,
+    "leaked_paise": 378382144,
+    "recovery_rate": 0.717,
+    "mandates_recovered": 480,
+    "mandates_halted": 160,
+    "mandates_stopped_other": 0,
+    "violations_total": 1581,
+    "violations_by_invariant": {
+      "INV-03": 108,
+      "INV-08": 186,
+      "INV-14": 1287
+    },
+    "retries_consumed_total": 1287,
+    "retries_consumed_mean": 2.011,
+    "retries_wasted_on_terminal": 108,
+    "interventions_by_type": {
+      "pre_debit_notice": 1287,
+      "post_debit_confirmation": 480,
+      "source_aware_failure_notice": 807
+    },
+    "dark_pattern_rejections": 0,
+    "stopping_reasons": {
+      "recovered": 480,
+      "attempt_budget_exhausted": 160
+    }
+  },
+  {
+    "strategy": "B3_reason_aware",
+    "split": "train",
+    "n_records": 640,
+    "wall_clock_seconds": 1.3956,
+    "throughput_records_per_min": 27514.9,
+    "at_risk_paise": 1337126431,
+    "recovered_paise": 778731366,
+    "leaked_paise": 558395065,
+    "recovery_rate": 0.5824,
+    "mandates_recovered": 368,
+    "mandates_halted": 126,
+    "mandates_stopped_other": 146,
+    "violations_total": 0,
+    "violations_by_invariant": {},
+    "retries_consumed_total": 961,
+    "retries_consumed_mean": 1.502,
+    "retries_wasted_on_terminal": 0,
+    "interventions_by_type": {
+      "pre_debit_notice": 961,
+      "post_debit_confirmation": 368,
+      "source_aware_failure_notice": 628,
+      "cancellation_confirmation": 38,
+      "escalate_to_support": 26
+    },
+    "dark_pattern_rejections": 0,
+    "stopping_reasons": {
+      "recovered": 368,
+      "attempt_budget_exhausted": 126,
+      "customer opted out": 47,
+      "verdict=likely_intentional_nonpayment": 38,
+      "verdict=terminal": 35,
+      "verdict=investigate": 26
+    }
+  },
+  {
+    "strategy": "engine",
+    "split": "train",
+    "n_records": 640,
+    "wall_clock_seconds": 1.6896,
+    "throughput_records_per_min": 22727.2,
+    "at_risk_paise": 1337126431,
+    "recovered_paise": 791754724,
+    "leaked_paise": 545371707,
+    "recovery_rate": 0.5921,
+    "mandates_recovered": 374,
+    "mandates_halted": 120,
+    "mandates_stopped_other": 146,
+    "violations_total": 0,
+    "violations_by_invariant": {},
+    "retries_consumed_total": 954,
+    "retries_consumed_mean": 1.491,
+    "retries_wasted_on_terminal": 0,
+    "interventions_by_type": {
+      "pre_debit_notice": 954,
+      "post_debit_confirmation": 374,
+      "source_aware_failure_notice": 615,
+      "cancellation_confirmation": 38,
+      "escalate_to_support": 26
+    },
+    "dark_pattern_rejections": 0,
+    "stopping_reasons": {
+      "recovered": 374,
+      "customer opted out": 47,
+      "verdict=likely_intentional_nonpayment": 38,
+      "attempt_budget_exhausted": 120,
+      "verdict=terminal": 35,
+      "verdict=investigate": 26
+    }
+  },
+  {
+    "strategy": "B0_no_recovery",
+    "split": "heldout",
+    "n_records": 160,
+    "wall_clock_seconds": 0.0292,
+    "throughput_records_per_min": 329115.4,
+    "at_risk_paise": 299342821,
+    "recovered_paise": 0,
+    "leaked_paise": 299342821,
+    "recovery_rate": 0.0,
+    "mandates_recovered": 0,
+    "mandates_halted": 160,
+    "mandates_stopped_other": 0,
+    "violations_total": 0,
+    "violations_by_invariant": {},
+    "retries_consumed_total": 0,
+    "retries_consumed_mean": 0.0,
+    "retries_wasted_on_terminal": 0,
+    "interventions_by_type": {},
+    "dark_pattern_rejections": 0,
+    "stopping_reasons": {
+      "attempt_budget_exhausted": 160
+    }
+  },
+  {
+    "strategy": "B1_naive_retry",
+    "split": "heldout",
+    "n_records": 160,
+    "wall_clock_seconds": 0.059,
+    "throughput_records_per_min": 162634.4,
+    "at_risk_paise": 299342821,
+    "recovered_paise": 202208561,
+    "leaked_paise": 97134260,
+    "recovery_rate": 0.6755,
+    "mandates_recovered": 121,
+    "mandates_halted": 39,
+    "mandates_stopped_other": 0,
+    "violations_total": 980,
+    "violations_by_invariant": {
+      "INV-01": 98,
+      "INV-03": 15,
+      "INV-06": 263,
+      "INV-07": 302,
+      "INV-14": 302
+    },
+    "retries_consumed_total": 302,
+    "retries_consumed_mean": 1.887,
+    "retries_wasted_on_terminal": 15,
+    "interventions_by_type": {},
+    "dark_pattern_rejections": 0,
+    "stopping_reasons": {
+      "recovered": 121,
+      "attempt_budget_exhausted": 39
+    }
+  },
+  {
+    "strategy": "B2_fixed_schedule",
+    "split": "heldout",
+    "n_records": 160,
+    "wall_clock_seconds": 0.0726,
+    "throughput_records_per_min": 132247.8,
+    "at_risk_paise": 299342821,
+    "recovered_paise": 199018229,
+    "leaked_paise": 100324592,
+    "recovery_rate": 0.6649,
+    "mandates_recovered": 117,
+    "mandates_halted": 43,
+    "mandates_stopped_other": 0,
+    "violations_total": 371,
+    "violations_by_invariant": {
+      "INV-03": 15,
+      "INV-08": 40,
+      "INV-14": 316
+    },
+    "retries_consumed_total": 316,
+    "retries_consumed_mean": 1.975,
+    "retries_wasted_on_terminal": 15,
+    "interventions_by_type": {
+      "pre_debit_notice": 316,
+      "source_aware_failure_notice": 199,
+      "post_debit_confirmation": 117
+    },
+    "dark_pattern_rejections": 0,
+    "stopping_reasons": {
+      "recovered": 117,
+      "attempt_budget_exhausted": 43
+    }
+  },
+  {
+    "strategy": "B3_reason_aware",
+    "split": "heldout",
+    "n_records": 160,
+    "wall_clock_seconds": 0.3049,
+    "throughput_records_per_min": 31484.8,
+    "at_risk_paise": 299342821,
+    "recovered_paise": 154699754,
+    "leaked_paise": 144643067,
+    "recovery_rate": 0.5168,
+    "mandates_recovered": 98,
+    "mandates_halted": 28,
+    "mandates_stopped_other": 34,
+    "violations_total": 0,
+    "violations_by_invariant": {},
+    "retries_consumed_total": 235,
+    "retries_consumed_mean": 1.469,
+    "retries_wasted_on_terminal": 0,
+    "interventions_by_type": {
+      "pre_debit_notice": 235,
+      "post_debit_confirmation": 98,
+      "source_aware_failure_notice": 142,
+      "cancellation_confirmation": 11,
+      "escalate_to_support": 8
+    },
+    "dark_pattern_rejections": 0,
+    "stopping_reasons": {
+      "recovered": 98,
+      "verdict=terminal": 5,
+      "attempt_budget_exhausted": 28,
+      "customer opted out": 10,
+      "verdict=likely_intentional_nonpayment": 11,
+      "verdict=investigate": 8
+    }
+  },
+  {
+    "strategy": "engine",
+    "split": "heldout",
+    "n_records": 160,
+    "wall_clock_seconds": 0.3505,
+    "throughput_records_per_min": 27392.2,
+    "at_risk_paise": 299342821,
+    "recovered_paise": 160490001,
+    "leaked_paise": 138852820,
+    "recovery_rate": 0.5361,
+    "mandates_recovered": 99,
+    "mandates_halted": 27,
+    "mandates_stopped_other": 34,
+    "violations_total": 0,
+    "violations_by_invariant": {},
+    "retries_consumed_total": 235,
+    "retries_consumed_mean": 1.469,
+    "retries_wasted_on_terminal": 0,
+    "interventions_by_type": {
+      "pre_debit_notice": 235,
+      "post_debit_confirmation": 99,
+      "source_aware_failure_notice": 141,
+      "cancellation_confirmation": 11,
+      "escalate_to_support": 8
+    },
+    "dark_pattern_rejections": 0,
+    "stopping_reasons": {
+      "recovered": 99,
+      "verdict=terminal": 5,
+      "attempt_budget_exhausted": 27,
+      "customer opted out": 10,
+      "verdict=likely_intentional_nonpayment": 11,
+      "verdict=investigate": 8
+    }
+  }
+]

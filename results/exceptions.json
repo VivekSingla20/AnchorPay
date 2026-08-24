@@ -1,0 +1,2130 @@
+[
+  {
+    "mandate_id": "mandate_14cb2d15d4ec9d",
+    "final_status": "stopped",
+    "stopped_reason": "customer opted out",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 72607,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_ac511cba25a852",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=likely_intentional_nonpayment",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 60652,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_2087e42daa6801",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 9707442,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_d6f469050e6583",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 2096451,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_18d989dbff436d",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=terminal",
+    "root_cause_reason": "invalid_vpa",
+    "amount_paise": 170264,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_852a2d239e87be",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "payment_declined",
+    "amount_paise": 933942,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_94f70bcd13b5db",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=likely_intentional_nonpayment",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 157564,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_2b1f8e9c285c62",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 48259,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_2c8424b39909eb",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 680881,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_008e8cb5c92c53",
+    "final_status": "stopped",
+    "stopped_reason": "customer opted out",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 169086,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_09103a95db77b2",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 1978387,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_73a257fb6ada81",
+    "final_status": "stopped",
+    "stopped_reason": "customer opted out",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 10939155,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_30ce94d27d8a06",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=likely_intentional_nonpayment",
+    "root_cause_reason": "payment_cancelled",
+    "amount_paise": 1377339,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_d298b5e5378452",
+    "final_status": "stopped",
+    "stopped_reason": "customer opted out",
+    "root_cause_reason": "bank_technical_error",
+    "amount_paise": 179093,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_ea8d78ad89105c",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=likely_intentional_nonpayment",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 122927,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_b9b969ac8784d9",
+    "final_status": "stopped",
+    "stopped_reason": "customer opted out",
+    "root_cause_reason": "payment_timed_out",
+    "amount_paise": 153141,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_90050e67ba64d8",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=terminal",
+    "root_cause_reason": "invalid_vpa",
+    "amount_paise": 2228764,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_245bae9b938c5e",
+    "final_status": "stopped",
+    "stopped_reason": "customer opted out",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 34947,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_4aa84236037cec",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "payment_declined",
+    "amount_paise": 13001387,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_88a285990c70a6",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 7089860,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_6cbee679cc7785",
+    "final_status": "stopped",
+    "stopped_reason": "customer opted out",
+    "root_cause_reason": "__unknown__",
+    "amount_paise": 84051,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_623226dac5c94e",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=investigate",
+    "root_cause_reason": "vpa_resolution_failed",
+    "amount_paise": 415667,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_d5eb2206d9f8a3",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=likely_intentional_nonpayment",
+    "root_cause_reason": "payment_cancelled",
+    "amount_paise": 117191,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_72cf64d6040e5f",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 1243857,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_eac88d9123e245",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 39845,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_55dcf86b134c2a",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=likely_intentional_nonpayment",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 147134,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_0c516a3cbdc411",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 829657,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_f0885a8d955f7c",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "bank_technical_error",
+    "amount_paise": 14987126,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_d602782bf3293b",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "payment_timed_out",
+    "amount_paise": 2488613,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_536afd08b800c6",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=terminal",
+    "root_cause_reason": "invalid_vpa",
+    "amount_paise": 161231,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_d1caacc971bdc3",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=likely_intentional_nonpayment",
+    "root_cause_reason": "payment_cancelled",
+    "amount_paise": 2319292,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_2a7076be2caa92",
+    "final_status": "stopped",
+    "stopped_reason": "customer opted out",
+    "root_cause_reason": "payment_declined",
+    "amount_paise": 174642,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_8891324a73a2d6",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "payment_timed_out",
+    "amount_paise": 140318,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_2a4c6112e218ae",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=likely_intentional_nonpayment",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 70040,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_3cd9239dfd2f2f",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=investigate",
+    "root_cause_reason": "credit_failed",
+    "amount_paise": 185735,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_e850a5b0bb1613",
+    "final_status": "stopped",
+    "stopped_reason": "customer opted out",
+    "root_cause_reason": "credit_failed",
+    "amount_paise": 1282057,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_03d4165655ec84",
+    "final_status": "stopped",
+    "stopped_reason": "customer opted out",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 2373289,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_50239e8037a3ab",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=likely_intentional_nonpayment",
+    "root_cause_reason": "payment_cancelled",
+    "amount_paise": 101110,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_01d213d3723c66",
+    "final_status": "stopped",
+    "stopped_reason": "customer opted out",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 7756921,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_213cc1bbb43b22",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 74345,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_36471859efe00e",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=terminal",
+    "root_cause_reason": "invalid_vpa",
+    "amount_paise": 978611,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_2c0b1f62211d96",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=investigate",
+    "root_cause_reason": "credit_failed",
+    "amount_paise": 12631942,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_b7984f97759beb",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=terminal",
+    "root_cause_reason": "invalid_vpa",
+    "amount_paise": 31575,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_b0ad53eb89c8b8",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=terminal",
+    "root_cause_reason": "invalid_vpa",
+    "amount_paise": 123612,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_968fa7cbca4cf0",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=terminal",
+    "root_cause_reason": "payment_declined",
+    "amount_paise": 933732,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_2d9ecc023cb25e",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=likely_intentional_nonpayment",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 2164866,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_0627230f43c604",
+    "final_status": "stopped",
+    "stopped_reason": "customer opted out",
+    "root_cause_reason": "bank_technical_error",
+    "amount_paise": 54897,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_b6597e0912b9d3",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "payment_declined",
+    "amount_paise": 174167,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_6a7ba7321637ac",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=investigate",
+    "root_cause_reason": "credit_failed",
+    "amount_paise": 125606,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_2bef345c024455",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=investigate",
+    "root_cause_reason": "vpa_resolution_failed",
+    "amount_paise": 20037,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_f13c0809268e45",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 116986,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_c1f7111aa07be7",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=terminal",
+    "root_cause_reason": "invalid_vpa",
+    "amount_paise": 66054,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_e6f8929566098c",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "payment_collect_request_expired",
+    "amount_paise": 178451,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_022c41c66e16c9",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 1035006,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_88ca7438c20ff6",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "payment_declined",
+    "amount_paise": 5779607,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_78987602bb0c12",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 187635,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_6907ea6ea663e2",
+    "final_status": "stopped",
+    "stopped_reason": "customer opted out",
+    "root_cause_reason": "bank_technical_error",
+    "amount_paise": 88683,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_ceea37e232f034",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 110470,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_6804f31c0c9dd4",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=terminal",
+    "root_cause_reason": "invalid_vpa",
+    "amount_paise": 625483,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_09ce7cde3933ec",
+    "final_status": "stopped",
+    "stopped_reason": "customer opted out",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 123538,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_96760df0032807",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=investigate",
+    "root_cause_reason": "credit_failed",
+    "amount_paise": 42206,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_6659ce9958df93",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 123680,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_6ac3acd0abced3",
+    "final_status": "stopped",
+    "stopped_reason": "customer opted out",
+    "root_cause_reason": "gateway_technical_error",
+    "amount_paise": 2470500,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_39bc62d1e4a7d4",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=likely_intentional_nonpayment",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 8583745,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_1e9e1e3ea9abee",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 1830214,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_7d9751cf14240a",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 7299174,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_5708c685432274",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 106328,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_309c32140581b6",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "payment_declined",
+    "amount_paise": 138992,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_7227afee59a14d",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "bank_technical_error",
+    "amount_paise": 12309087,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_0df2f96b1e87e6",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 99908,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_462f5ca01fbbd5",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "payment_declined",
+    "amount_paise": 974903,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_7df667ae0e0e6e",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "payment_declined",
+    "amount_paise": 101949,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_ae81ce48483adb",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 4044035,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_953fa9eca19569",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=terminal",
+    "root_cause_reason": "invalid_vpa",
+    "amount_paise": 182577,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_2987f7384bc144",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 152724,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_41cb4da41f328d",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=investigate",
+    "root_cause_reason": "vpa_resolution_failed",
+    "amount_paise": 1056162,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_9d3dbb7b375d0f",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=terminal",
+    "root_cause_reason": "invalid_vpa",
+    "amount_paise": 146292,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_c1fd866a3ee09b",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=terminal",
+    "root_cause_reason": "invalid_vpa",
+    "amount_paise": 42667,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_bb453784b569e5",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 1758427,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_5ab7b97dc640af",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "payment_declined",
+    "amount_paise": 11802014,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_09360397a13b94",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=terminal",
+    "root_cause_reason": "invalid_vpa",
+    "amount_paise": 585466,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_fc73af792d81d0",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=investigate",
+    "root_cause_reason": "credit_failed",
+    "amount_paise": 11607096,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_d7d12e511fb186",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 839585,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_dd5ea448b37f1c",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=likely_intentional_nonpayment",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 2204511,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_d8bad5a621f386",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "payment_declined",
+    "amount_paise": 104330,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_3337a8a897ebc3",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=likely_intentional_nonpayment",
+    "root_cause_reason": "payment_cancelled",
+    "amount_paise": 88814,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_8c47ef033c7e01",
+    "final_status": "stopped",
+    "stopped_reason": "customer opted out",
+    "root_cause_reason": "payment_declined",
+    "amount_paise": 88599,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_fc758dccc529de",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "payment_declined",
+    "amount_paise": 178859,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_0d75c357617b5d",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 150920,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_cc3cf98842940d",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 1844140,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_178d4a150b4be0",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 10195817,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_8113bae115acf1",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 10608,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_500193bab937cd",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 43052,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_b2f4b66d62f202",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 23812,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_d4e874fdbfc29a",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 1420658,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_37fb67480c692b",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 8475746,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_5dfd2a3458a2fa",
+    "final_status": "stopped",
+    "stopped_reason": "customer opted out",
+    "root_cause_reason": "payment_collect_request_expired",
+    "amount_paise": 1764878,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_04dc12c924b135",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 165423,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_bf9acb52c36ee2",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 9960,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_3ca9259f93f65f",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "bank_technical_error",
+    "amount_paise": 955325,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_ad35433ffb5fcd",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "gateway_technical_error",
+    "amount_paise": 43376,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_eed63a1193c523",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=likely_intentional_nonpayment",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 126567,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_aa4e0d905d481b",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=terminal",
+    "root_cause_reason": "payment_declined",
+    "amount_paise": 1916669,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_9ff508db8e9c46",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=likely_intentional_nonpayment",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 8103162,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_282404e84c409f",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=investigate",
+    "root_cause_reason": "__unknown__",
+    "amount_paise": 166969,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_9836b5816ad350",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=investigate",
+    "root_cause_reason": "credit_failed",
+    "amount_paise": 5714914,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_37048ceedc8d65",
+    "final_status": "stopped",
+    "stopped_reason": "customer opted out",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 4404793,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_9dd82bf8ce15c3",
+    "final_status": "stopped",
+    "stopped_reason": "customer opted out",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 96536,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_3bfab29cf1b927",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 2058276,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_4420130d74acd1",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=likely_intentional_nonpayment",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 1087010,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_c61d98a39d423c",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 1088602,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_f9e3db493f88ac",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=likely_intentional_nonpayment",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 2147533,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_16e6fabf244a1b",
+    "final_status": "stopped",
+    "stopped_reason": "customer opted out",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 169273,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_4877307843f353",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 807982,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_3064dd2041ca7e",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 48771,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_19d44e831ca793",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "payment_declined",
+    "amount_paise": 99142,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_dff7750495929e",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 13502334,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_69a47d602feb1a",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "bank_technical_error",
+    "amount_paise": 74350,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_a699eb5dbf4563",
+    "final_status": "stopped",
+    "stopped_reason": "customer opted out",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 12756738,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_6ca750eac93c8e",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=likely_intentional_nonpayment",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 9388766,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_fc26dd60e7ce37",
+    "final_status": "stopped",
+    "stopped_reason": "customer opted out",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 50776,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_a733b9706840d1",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=likely_intentional_nonpayment",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 14853,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_98b7904a5fbf56",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=terminal",
+    "root_cause_reason": "invalid_vpa",
+    "amount_paise": 1873682,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_9c754e3e348c9c",
+    "final_status": "stopped",
+    "stopped_reason": "customer opted out",
+    "root_cause_reason": "bank_technical_error",
+    "amount_paise": 2283464,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_edf8dfa6ad6479",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 1550017,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_0f42592589bd10",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 13057099,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_487802bdac2d36",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=investigate",
+    "root_cause_reason": "vpa_resolution_failed",
+    "amount_paise": 81935,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_1411dca562a3e3",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 176738,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_c610878a6c730f",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "bank_technical_error",
+    "amount_paise": 1584009,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_a6272b7627de50",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "payment_declined",
+    "amount_paise": 158276,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_743fecec14dc2e",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=likely_intentional_nonpayment",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 32771,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_d5989bd68131e4",
+    "final_status": "stopped",
+    "stopped_reason": "customer opted out",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 163678,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_5dc7ff7470f812",
+    "final_status": "stopped",
+    "stopped_reason": "customer opted out",
+    "root_cause_reason": "gateway_technical_error",
+    "amount_paise": 80813,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_ab39d6963c8c46",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=terminal",
+    "root_cause_reason": "invalid_vpa",
+    "amount_paise": 165068,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_03cacf09b3c773",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 151779,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_dac0eb114f9ea8",
+    "final_status": "stopped",
+    "stopped_reason": "customer opted out",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 186649,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_3470b0c412b16a",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=terminal",
+    "root_cause_reason": "invalid_vpa",
+    "amount_paise": 158165,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_8f2d0a4c06debd",
+    "final_status": "stopped",
+    "stopped_reason": "customer opted out",
+    "root_cause_reason": "payment_collect_request_expired",
+    "amount_paise": 1500082,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_90c0b4c01b73fb",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "payment_collect_request_expired",
+    "amount_paise": 87959,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_9a4047c17ec2f4",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=likely_intentional_nonpayment",
+    "root_cause_reason": "payment_cancelled",
+    "amount_paise": 14078,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_7cc02eca2175b7",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=terminal",
+    "root_cause_reason": "invalid_vpa",
+    "amount_paise": 5212477,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_6fcde4b3ff8ea7",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=investigate",
+    "root_cause_reason": "vpa_resolution_failed",
+    "amount_paise": 21946,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_f663e268eed9f4",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "payment_declined",
+    "amount_paise": 85991,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_566aea95883de1",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "payment_declined",
+    "amount_paise": 1568186,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_13f4d886110a33",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=investigate",
+    "root_cause_reason": "vpa_resolution_failed",
+    "amount_paise": 2143987,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_9015c4f51e808a",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 157728,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_1526a75c1ddf7c",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=likely_intentional_nonpayment",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 12827583,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_f46ede99901a2d",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 872639,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_3988f76c816b8f",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 140077,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_a8bc97b1dfec07",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 134710,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_0041c4c018c2e0",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=investigate",
+    "root_cause_reason": "credit_failed",
+    "amount_paise": 10450422,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_7c29ba04680fd6",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=investigate",
+    "root_cause_reason": "credit_failed",
+    "amount_paise": 5964915,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_71b0540cb0fbbe",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 448618,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_0ff7409112f527",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=likely_intentional_nonpayment",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 10977533,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_d3608d4b260c7d",
+    "final_status": "stopped",
+    "stopped_reason": "customer opted out",
+    "root_cause_reason": "vpa_resolution_failed",
+    "amount_paise": 93023,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_3ab0cd989eb9d8",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=likely_intentional_nonpayment",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 167196,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_e4bf2c7d77a87f",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 177578,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_731c2afe85f4b9",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 142211,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_16248508cec898",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=likely_intentional_nonpayment",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 60240,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_1b4d24484063b7",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "bank_technical_error",
+    "amount_paise": 117813,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_ef518e1983f2f9",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 67522,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_322820d47680da",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=investigate",
+    "root_cause_reason": "credit_failed",
+    "amount_paise": 2033039,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_0b2e311a3eaee8",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "bank_technical_error",
+    "amount_paise": 10834833,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_7c88ea919a2834",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=terminal",
+    "root_cause_reason": "payment_declined",
+    "amount_paise": 174563,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_406bb9225a1897",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 132027,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_75aa0b20cdb00f",
+    "final_status": "stopped",
+    "stopped_reason": "customer opted out",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 98204,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_53df09710b90bd",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 11010412,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_9bca7a2980cb33",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=investigate",
+    "root_cause_reason": "credit_failed",
+    "amount_paise": 150709,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_6d9a9aac59b1db",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=investigate",
+    "root_cause_reason": "credit_failed",
+    "amount_paise": 361125,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_62f5ee11c70408",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 39016,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_07b5f2b3ef8f66",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "payment_collect_request_expired",
+    "amount_paise": 26293,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_36596565e06d85",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=likely_intentional_nonpayment",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 124716,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_8e75284b061558",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 1157603,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_a2b43354514ac4",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=terminal",
+    "root_cause_reason": "payment_declined",
+    "amount_paise": 12231497,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_3c70de4aa1f7b1",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "payment_declined",
+    "amount_paise": 123801,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_8f4ada1cd2de97",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 122972,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_8016a765c456af",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=likely_intentional_nonpayment",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 2149004,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_e68fba96be35ee",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=investigate",
+    "root_cause_reason": "vpa_resolution_failed",
+    "amount_paise": 40637,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_9dab0d791326c3",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=likely_intentional_nonpayment",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 130863,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_4c1cfb3f505199",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=terminal",
+    "root_cause_reason": "invalid_vpa",
+    "amount_paise": 118689,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_a4b43ac5da0948",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=likely_intentional_nonpayment",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 95530,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_4610e781ddbc1b",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=likely_intentional_nonpayment",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 190225,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_474abbb7dfc478",
+    "final_status": "stopped",
+    "stopped_reason": "customer opted out",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 58966,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_98ad4fbd5e38cd",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 191529,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_e502fe3f7e0c5b",
+    "final_status": "stopped",
+    "stopped_reason": "customer opted out",
+    "root_cause_reason": "bank_technical_error",
+    "amount_paise": 1644113,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_8026d50e610bc6",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 139222,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_92c069e57ea2ec",
+    "final_status": "stopped",
+    "stopped_reason": "customer opted out",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 8222789,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_39a2bff6b6cd2c",
+    "final_status": "stopped",
+    "stopped_reason": "customer opted out",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 342146,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_b588b8176cf705",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 14178639,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_4d637af56529d2",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 2002118,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_971f54f4032d20",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=likely_intentional_nonpayment",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 162405,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_a975898d478708",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 883754,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_aa3374acf9f7b2",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 15637,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_466af300e097d7",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "payment_collect_request_expired",
+    "amount_paise": 1467223,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_1440f767f258d2",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=investigate",
+    "root_cause_reason": "credit_failed",
+    "amount_paise": 1450767,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_ace17c20631f86",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 126089,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_0a22803351c1fc",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=terminal",
+    "root_cause_reason": "invalid_vpa",
+    "amount_paise": 2195000,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_b246957a8d7607",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 1810232,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_9cd79f8308eb99",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "payment_declined",
+    "amount_paise": 195226,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_82865dd7cf74a1",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=likely_intentional_nonpayment",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 37712,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_e82348bcde8ab8",
+    "final_status": "stopped",
+    "stopped_reason": "customer opted out",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 9518447,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_76f0be267e295a",
+    "final_status": "stopped",
+    "stopped_reason": "customer opted out",
+    "root_cause_reason": "bank_technical_error",
+    "amount_paise": 61120,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_38ffb7469a3a7d",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 33963,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_5286f10bc39282",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=investigate",
+    "root_cause_reason": "credit_failed",
+    "amount_paise": 10684009,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_e331489f0ccdf2",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 425946,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_d6c29a419399cd",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 103570,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_215be2d65f2669",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=likely_intentional_nonpayment",
+    "root_cause_reason": "payment_cancelled",
+    "amount_paise": 77048,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_c84821b207604c",
+    "final_status": "stopped",
+    "stopped_reason": "customer opted out",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 409311,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_9e16df16442e3b",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 777556,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_6f913cfe20c9f5",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 173001,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_803f5d836abe19",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=terminal",
+    "root_cause_reason": "invalid_vpa",
+    "amount_paise": 9776625,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_1cec3c6f87cd9e",
+    "final_status": "stopped",
+    "stopped_reason": "customer opted out",
+    "root_cause_reason": "gateway_technical_error",
+    "amount_paise": 125659,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_ccfba8d011a4ad",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=terminal",
+    "root_cause_reason": "payment_declined",
+    "amount_paise": 5182767,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_c7a60ed6345116",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "payment_declined",
+    "amount_paise": 1837385,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_6d6705402e3683",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 431230,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_cca3eb8fb5d83e",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=terminal",
+    "root_cause_reason": "invalid_vpa",
+    "amount_paise": 199804,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_e8bc3f532df76e",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=terminal",
+    "root_cause_reason": "invalid_vpa",
+    "amount_paise": 93327,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_0c105cf3a282c6",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=terminal",
+    "root_cause_reason": "payment_declined",
+    "amount_paise": 677861,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_a47fbe5c566b34",
+    "final_status": "stopped",
+    "stopped_reason": "customer opted out",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 23245,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_eed01e5b52e2b9",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=terminal",
+    "root_cause_reason": "invalid_vpa",
+    "amount_paise": 24082,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_baa42f63f91bad",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=likely_intentional_nonpayment",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 26138,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_418032f7fa25f4",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=likely_intentional_nonpayment",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 23566,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_7888f179fce731",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 933691,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_5627789467f1d2",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 1737756,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_5ec10f3c2c7068",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "gateway_technical_error",
+    "amount_paise": 6636922,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_e46978b75e3a7f",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 61035,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_56c6f997c31d72",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 136366,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_46737837a19959",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 39505,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_99e19969c2fdfb",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "gateway_technical_error",
+    "amount_paise": 175470,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_a799ef6f914707",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 61439,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_9ee7a69a9deb45",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 181277,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_7f75145af35fb3",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=likely_intentional_nonpayment",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 190298,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_f2c9919b58645d",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=likely_intentional_nonpayment",
+    "root_cause_reason": "payment_cancelled",
+    "amount_paise": 124971,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_eae427ee8b840f",
+    "final_status": "stopped",
+    "stopped_reason": "customer opted out",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 7850065,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_319be5234409cd",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 128740,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_896c2e8b5cb074",
+    "final_status": "stopped",
+    "stopped_reason": "customer opted out",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 41768,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_0ba9b983a17255",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=investigate",
+    "root_cause_reason": "vpa_resolution_failed",
+    "amount_paise": 83146,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_8985d7c629aa7e",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=terminal",
+    "root_cause_reason": "payment_declined",
+    "amount_paise": 166883,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_b95e653ac90cc1",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "payment_timed_out",
+    "amount_paise": 93825,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_33c325dc8c0ab8",
+    "final_status": "stopped",
+    "stopped_reason": "customer opted out",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 177274,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_2711d0746ad5df",
+    "final_status": "stopped",
+    "stopped_reason": "customer opted out",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 390078,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_c91a0dbdd44921",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=likely_intentional_nonpayment",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 11714011,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_dc07fdde6ca2ef",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=terminal",
+    "root_cause_reason": "payment_declined",
+    "amount_paise": 13378812,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_edeb78a8173279",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 167513,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_568f15f80ae259",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 161203,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_4340fe26e9074b",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=terminal",
+    "root_cause_reason": "payment_declined",
+    "amount_paise": 33335,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_1d4c9f64b21e2f",
+    "final_status": "stopped",
+    "stopped_reason": "customer opted out",
+    "root_cause_reason": "gateway_technical_error",
+    "amount_paise": 55031,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_e7ea2fc6c12e25",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=investigate",
+    "root_cause_reason": "vpa_resolution_failed",
+    "amount_paise": 80455,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_190d8102db3b6a",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=investigate",
+    "root_cause_reason": "credit_failed",
+    "amount_paise": 125685,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_37df80f5dca2a4",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "gateway_technical_error",
+    "amount_paise": 509566,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_b36c5ebbd3ff98",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "payment_declined",
+    "amount_paise": 123607,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_f58bbe74796c87",
+    "final_status": "stopped",
+    "stopped_reason": "customer opted out",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 153312,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_ac288d349ed684",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=terminal",
+    "root_cause_reason": "invalid_vpa",
+    "amount_paise": 12669920,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_612a6574b8cdb3",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=investigate",
+    "root_cause_reason": "__unknown__",
+    "amount_paise": 21072,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_9df75ee2bbbf38",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "payment_declined",
+    "amount_paise": 849734,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_9750ea06c79047",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=investigate",
+    "root_cause_reason": "credit_failed",
+    "amount_paise": 174346,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_c86a776c5aaf48",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=terminal",
+    "root_cause_reason": "invalid_vpa",
+    "amount_paise": 1104911,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_8d6e83e6078a31",
+    "final_status": "stopped",
+    "stopped_reason": "customer opted out",
+    "root_cause_reason": "bank_technical_error",
+    "amount_paise": 169194,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_11e3f0fcd79e2c",
+    "final_status": "stopped",
+    "stopped_reason": "customer opted out",
+    "root_cause_reason": "invalid_vpa",
+    "amount_paise": 1485274,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_00c52331487d2f",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=terminal",
+    "root_cause_reason": "payment_declined",
+    "amount_paise": 11282401,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_333523497cd119",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 47370,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_712ecaeb2e9fe4",
+    "final_status": "stopped",
+    "stopped_reason": "verdict=terminal",
+    "root_cause_reason": "invalid_vpa",
+    "amount_paise": 333336,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_7dfecab2df3ca7",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "payment_collect_request_expired",
+    "amount_paise": 183653,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_816ef49f470ea6",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "insufficient_funds",
+    "amount_paise": 9186883,
+    "attempts_made": 3
+  },
+  {
+    "mandate_id": "mandate_ef6c4ad49f801a",
+    "final_status": "stopped",
+    "stopped_reason": "customer opted out",
+    "root_cause_reason": "bank_technical_error",
+    "amount_paise": 97280,
+    "attempts_made": 0
+  },
+  {
+    "mandate_id": "mandate_8734d01bf029be",
+    "final_status": "halted",
+    "stopped_reason": "attempt budget exhausted (4/4); the subscription moves to halted, matching Razorpay's own 4-consecutive-failure rule (SOURCES.md \u00a74) and NPCI's 1+3 cap (SOURCES.md \u00a71).",
+    "root_cause_reason": "payment_timed_out",
+    "amount_paise": 123850,
+    "attempts_made": 3
+  }
+]

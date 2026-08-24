@@ -1,0 +1,10 @@
+{
+  "true_positive": 9,
+  "false_positive": 2,
+  "true_negative": 149,
+  "false_negative": 0,
+  "precision": 0.8182,
+  "recall": 1.0,
+  "f1": 0.9,
+  "n": 160
+}

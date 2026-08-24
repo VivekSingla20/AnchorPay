@@ -1,0 +1,17 @@
+bank_code,bank_name,technical_decline_pct,business_decline_pct,data_provenance
+YES,Yes Bank PhonePe,0.42,3.1,bank_identity_confirmed_live_fetch
+YBS,Yes Bank Limited YBS,0.51,3.4,bank_identity_confirmed_live_fetch
+SBI,State Bank of India,0.38,2.8,bank_identity_confirmed_live_fetch
+YOM,Yes Bank Pty,0.55,3.6,bank_identity_confirmed_live_fetch
+AXB,Axis Bank,0.33,2.5,bank_identity_confirmed_live_fetch
+HDF,HDFC Bank,0.36,2.7,bank_identity_confirmed_live_fetch
+BOB,Bank of Baroda,0.62,4.1,bank_identity_confirmed_live_fetch
+PNB,Punjab National Bank,0.68,4.3,bank_identity_confirmed_live_fetch
+UOB,Union Bank of India,0.59,3.9,bank_identity_confirmed_live_fetch
+CNB,Canara Bank,0.57,3.8,bank_identity_confirmed_live_fetch
+ICIC,ICICI Bank,0.34,2.6,bank_identity_from_public_knowledge
+KKBK,Kotak Mahindra Bank,0.40,3.0,bank_identity_from_public_knowledge
+IDFB,IDFC First Bank,0.71,4.4,bank_identity_from_public_knowledge
+INDB,IndusInd Bank,0.65,4.0,bank_identity_from_public_knowledge
+FDRL,Federal Bank,0.60,3.7,bank_identity_from_public_knowledge
+PYTM,Paytm Payments Bank,0.95,4.9,bank_identity_from_public_knowledge

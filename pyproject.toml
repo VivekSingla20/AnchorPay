@@ -1,0 +1,9 @@
+[project]
+name = "upi-autopay-mandate-recovery-engine"
+version = "0.1.0"
+description = "Constraint-aware retry allocation engine for failed UPI AutoPay mandates — Razorpay AI Buildathon 2026 submission."
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

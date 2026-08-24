@@ -1,0 +1,5 @@
+# Optional. Only needed if RECOVERY_ENGINE_USE_LLM=true and you want the
+# classify/intervene/copy stages to call a real model instead of their
+# deterministic fallbacks. `make eval` does not require this file.
+
+anthropic>=0.40,<1

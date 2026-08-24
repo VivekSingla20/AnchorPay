@@ -1,0 +1,12 @@
+# Core dependencies only. The system is fully functional — including
+# `make eval` — with exactly these installed. No paid API key or network
+# access is required to reproduce every number in EVALUATION.md.
+#
+# LLM-enhanced classification/intervention/copy-drafting is opt-in.
+# See requirements-llm.txt.
+
+pydantic>=2.6,<3
+pandas>=2.2,<3
+numpy>=2.0,<3
+pytest>=8.0,<9
+python-dotenv>=1.0,<2

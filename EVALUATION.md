@@ -46,11 +46,11 @@ On the train split (640 records), the engine strategy recovered Rs 7,917,547.24 
 
 | Strategy | Wall-clock (s) | Records/min | Mean retries/mandate | Interventions sent | Dark-pattern rejections |
 |---|---|---|---|---|---|
-| B0_no_recovery | 0.1609 | 238630.1 | 0.0 | 0 | 0 |
-| B1_naive_retry | 0.3132 | 122606.3 | 2.045 | 0 | 0 |
-| B2_fixed_schedule | 0.4817 | 79720.1 | 2.011 | 2574 | 0 |
-| B3_reason_aware | 2.1854 | 17571.5 | 1.502 | 2021 | 0 |
-| engine | 2.4107 | 15928.9 | 1.491 | 2007 | 0 |
+| B0_no_recovery | 0.1424 | 269732.2 | 0.0 | 0 | 0 |
+| B1_naive_retry | 0.2579 | 148896.7 | 2.045 | 0 | 0 |
+| B2_fixed_schedule | 0.3109 | 123528.5 | 2.011 | 2574 | 0 |
+| B3_reason_aware | 1.0609 | 36194.6 | 1.502 | 2021 | 0 |
+| engine | 1.8514 | 20741.2 | 1.491 | 2007 | 0 |
 
 ## Stopping-rule trigger counts (engine, train split)
 

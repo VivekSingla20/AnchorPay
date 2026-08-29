@@ -248,3 +248,41 @@ the only change a real integration would need.
 row reflects THIS demonstrative pattern's effect, not a real bank's typical
 downtime frequency. Reported with this caveat directly in EVALUATION.md's
 own ablation section, not just here.
+
+---
+
+### #A11 — Pause-cycle allowlist for the likely-intentional-nonpayment path
+
+`RC.MERCHANT_ALLOWED_PAUSE_CYCLES = (1, 2, 3)`, `RC.MERCHANT_PAUSE_CYCLES_CEILING = 3`
+
+**Why.** Raised directly by the operator mid-build: intent-inference
+(#A2) stops this engine from blindly re-attempting the SAME charge against
+a likely non-payer, but stopping is not the same as writing the customer
+off — "even a customer who doesn't want to pay is still a customer" from a
+business standpoint. Researched rather than assumed: Chargebee's own
+dunning-practice writeup states "instead of cancelling the subscription
+due to non-payment, create a flexible payment plan"; multiple 2026
+SaaS-churn playbooks independently converge on "replace the delete button
+with pause, downgrade, and discount options" — see DECISIONS.md ADR-012
+for the full research trail, including the regulatory check (US FTC
+click-to-cancel rule status) done before adopting this.
+
+**Structure, not just intent.** This reuses the EXACT allowlist-with-
+ceiling governance already built for grace periods (#A7) — the pause
+offer is never a free-form number the selector (LLM or deterministic)
+invents; it is always drawn from this tuple and independently re-checked
+by `guardrails/validator.py::validate_pause_offer` and
+`guardrails/invariants.py`'s INV-10 check, exactly like a grace period.
+
+**Deliberately NOT changed by this:** the underlying retryability verdict
+and stopping-rule logic. A likely-intentional-nonpayment mandate still
+never gets the SAME charge retried automatically — a pause is a
+customer-INITIATED alternate arrangement (they must reply to accept it),
+not this engine unilaterally trying again. `EVALUATION.md`'s recovered/
+at-risk/violations numbers are therefore unchanged by this addition
+(confirmed by re-running `python -m eval.run_eval` before and after).
+
+**Sensitivity.** The specific cycle count (1) chosen as the deterministic
+default is this engine's own conservative starting point, not a tuned
+value — like #A7, the number matters less than the STRUCTURE (an
+allowlist a human configured, enforced independently, never invented).

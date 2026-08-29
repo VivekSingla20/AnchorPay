@@ -172,6 +172,7 @@ class Notification(BaseModel):
     related_attempt_number: Optional[int] = None
     copy_text: str = ""
     grace_period_days: Optional[int] = None
+    pause_cycles_offered: Optional[int] = None
     screened: bool = False
     screen_passed: Optional[bool] = None
 

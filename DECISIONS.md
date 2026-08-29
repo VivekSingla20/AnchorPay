@@ -279,3 +279,75 @@ the human who reads the output, never touching the decision itself. See
 additions" for the fuller account, and `ARCHITECTURE.md` §3a for where
 these sit relative to the core pipeline.
 
+---
+
+### ADR-012 — Likely-intentional-nonpayment now offers a pause, alongside — never instead of — cancellation
+
+**Context.** The operator pushed back on `LIKELY_INTENTIONAL_NONPAYMENT`
+routing to a bare cancellation-confirmation: "even a customer who doesn't
+want to pay is still a customer" from a business standpoint, and asked
+for research — both on industry practice and on regulation — before
+changing anything.
+
+**Research done before deciding (not asserted from memory):**
+- Chargebee's own dunning-practice writeup, live-fetched: *"Instead of
+  cancelling the subscription due to non-payment, create a flexible
+  payment plan to ease some burdens on your customers."*
+- Multiple independent 2026 SaaS-churn playbooks (klyzed.com and others),
+  live-fetched, converge on the same reframe: *"replace the delete button
+  with pause, downgrade, and discount options."*
+- Industry framing (enterpret.com) that voluntary and involuntary churn
+  "require different interventions" — read as SUPPORTING, not undermining,
+  keeping intent-inference: the value is in correctly identifying which
+  bucket a mandate is in, then choosing the right intervention for that
+  bucket, not in collapsing the distinction.
+- The regulatory question checked directly rather than assumed: the US
+  FTC's "click-to-cancel" rule was **vacated by a court in 2025**, and the
+  FTC reopened rulemaking via a March 2026 ANPRM — this space is
+  contested and unsettled in the US, not a stable rule to cite as
+  precedent either way.
+- Cross-checked against India's own Dark Patterns Guidelines 2023
+  (already governing this project, Build Spec §1 principle 6, §6.6):
+  "subscription traps" specifically means hiding or obstructing
+  cancellation. It does not prohibit offering an equally-easy alternative
+  ALONGSIDE an equally-easy cancel option — that is the legal daylight
+  this design relies on.
+
+**Decision.** `CANCELLATION_CONFIRMATION` (kept as the existing enum
+name — see "rejected alternative" below) now always offers a
+merchant-allowlisted pause (`RC.MERCHANT_ALLOWED_PAUSE_CYCLES`,
+ASSUMPTIONS.md #A11) in the SAME single message as the cancel option,
+governed by the identical allowlist-with-ceiling mechanism already built
+for grace periods (INV-10) — `guardrails/validator.py::validate_pause_offer`
+and an extended `guardrails/invariants.py::check_inv10_grace_period_ceiling`
+independently re-check it, exactly like a grace period.
+
+**What deliberately did NOT change:** the retryability verdict and
+stopping-rule logic. This engine still never re-attempts the SAME charge
+against a mandate flagged as likely-intentional — a pause is something the
+CUSTOMER must reply to accept, not this engine unilaterally trying again.
+Confirmed via `python -m eval.run_eval` before and after: recovered
+rupees, at-risk rupees, and violation counts are byte-identical, because
+nothing about the money-moving logic changed, only what the one
+stop-and-ask message offers.
+
+**Rejected alternative — a new InterventionType / renaming the enum.**
+Considered adding `RETENTION_OFFER` as a new, better-named enum value, or
+renaming `CANCELLATION_CONFIRMATION`. Rejected to keep the change surgical:
+the verdict this intervention responds to is unchanged
+(`LIKELY_INTENTIONAL_NONPAYMENT`), and a rename would touch the enum,
+every template, every test, and every generated-artifact string
+(`results/escalations.json`, `EVALUATION.md`'s stopping-reason counts) for
+a naming improvement alone. Noted here explicitly rather than silently
+accepting a slightly-stale name: the enum is called
+`CANCELLATION_CONFIRMATION`; its behaviour is "offer a pause or a cancel,
+never assume the answer."
+
+**Rejected alternative — escalating multi-touch win-back campaign.**
+Some dunning playbooks researched recommend a SEQUENCE of increasingly
+generous offers across multiple messages. Rejected outright: that is
+exactly the "escalating-offer pressure" Razorpay Agent Studio principle 6
+and India's Dark Patterns Guidelines prohibit. This engine sends exactly
+ONE message with all options presented together, then stops — consistent
+with principle 5's "a no ends the sequence, no escalation loop."
+

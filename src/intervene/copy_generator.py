@@ -57,9 +57,9 @@ _TEMPLATES: dict[InterventionType, str] = {
         "You can also complete this payment directly at {short_url_label}. Reply STOP to opt out."
     ),
     InterventionType.CANCELLATION_CONFIRMATION: (
-        "We noticed your {merchant_label} mandate has not been executed for several cycles. "
-        "If you'd like to cancel, reply CANCEL and it will be actioned with no further attempts or charges. "
-        "If this was unintended, reply KEEP and we'll retry your next cycle as usual."
+        "We noticed your {merchant_label} mandate has not been executed for several cycles. You have options: "
+        "reply PAUSE to pause billing for {pause_cycles} cycle(s) at no charge, reply CANCEL to stop permanently "
+        "with no further attempts, or reply KEEP if this was unintended and we'll retry your next cycle as usual."
     ),
     InterventionType.ESCALATE_TO_SUPPORT: (
         "Your {merchant_label} payment of Rs {amount_rupees} needs a closer look on our side. "

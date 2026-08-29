@@ -123,6 +123,13 @@ def test_inv10_grace_period_ceiling_flagged() -> None:
     assert len(invariants.check_inv10_grace_period_ceiling([good])) == 0
 
 
+def test_inv10_pause_cycles_ceiling_flagged() -> None:
+    bad = Notification(mandate_id="m1", intervention_type="cancellation_confirmation", sent_at=BASE_TIME, pause_cycles_offered=30)
+    good = Notification(mandate_id="m1", intervention_type="cancellation_confirmation", sent_at=BASE_TIME, pause_cycles_offered=RC.MERCHANT_ALLOWED_PAUSE_CYCLES[0])
+    assert len(invariants.check_inv10_grace_period_ceiling([bad])) == 1
+    assert len(invariants.check_inv10_grace_period_ceiling([good])) == 0
+
+
 def test_inv11_empty_audit_reason_flagged() -> None:
     bad = AuditEntry(mandate_id="m1", stage="allocator", decision="x", reason="   ", actor="deterministic")
     good = AuditEntry(mandate_id="m1", stage="allocator", decision="x", reason="a real reason", actor="deterministic")

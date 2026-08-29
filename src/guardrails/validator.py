@@ -156,3 +156,15 @@ def validate_grace_period(days: int) -> GuardrailDecision:
     return GuardrailDecision(
         True, "within the merchant-configured allowlist and ceiling.", _mint_token("n/a", "grace_period", int(time.time()))
     )
+
+
+def validate_pause_offer(cycles: int) -> GuardrailDecision:
+    if cycles not in RC.MERCHANT_ALLOWED_PAUSE_CYCLES or cycles > RC.MERCHANT_PAUSE_CYCLES_CEILING:
+        return GuardrailDecision(
+            False,
+            f"pause_cycles_offered={cycles} is outside the merchant-configured allowlist "
+            f"{RC.MERCHANT_ALLOWED_PAUSE_CYCLES} (INV-10).",
+        )
+    return GuardrailDecision(
+        True, "within the merchant-configured pause allowlist and ceiling.", _mint_token("n/a", "pause_offer", int(time.time()))
+    )

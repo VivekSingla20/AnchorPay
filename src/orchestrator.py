@@ -53,19 +53,23 @@ _REASON_EXPLANATIONS: dict[str, str] = {
 }
 
 
-def _build_copy_context(mandate: Mandate, failure_event: Optional[FailureEvent], scheduled_at: Optional[int], window_label: str) -> dict:
+def _build_copy_context(
+    mandate: Mandate, failure_event: Optional[FailureEvent], scheduled_at: Optional[int], window_label: str,
+    pause_cycles: Optional[int] = None,
+) -> dict:
     """A superset context with a safe default for every key any template in
     intervene/copy_generator.py might reference, so `.format(**context)` can
     never KeyError regardless of which intervention type was chosen."""
     reason_value = failure_event.reason.value if failure_event else "payment_declined"
     return {
-        "merchant_label": "your merchant",
+        "merchant_label": "merchant",  # templates already prepend "Your " — see AI_USAGE.md's bug log
         "amount_rupees": f"{mandate.amount_paise / 100:.2f}",
         "window_label": window_label,
         "date_label": timeutils.to_ist(scheduled_at).strftime("%d %b %Y") if scheduled_at else "the scheduled date",
         "failure_explanation": _REASON_EXPLANATIONS.get(reason_value, "a payment issue"),
         "next_step": "We will automatically retry within your mandate's remaining attempts.",
         "short_url_label": "your Razorpay payment link",
+        "pause_cycles": pause_cycles if pause_cycles is not None else RC.MERCHANT_ALLOWED_PAUSE_CYCLES[0],
     }
 
 
@@ -140,7 +144,12 @@ def run_mandate(
             # engine's own smoke test (see AI_USAGE.md).
             choice = select_intervention(verdict=verdict.verdict, attempt_number=attempts_made + 1, mandate=mandate)
             audit.record(AuditEntry(mandate_id=mandate.mandate_id, stage="intervention_selector", decision=choice.intervention_type, reason=choice.rationale, actor=choice.actor))
-            copy_context = _build_copy_context(mandate, last_failure_event, None, "n/a")
+            if choice.pause_cycles_offered is not None:
+                pause_decision = validator.validate_pause_offer(choice.pause_cycles_offered)
+                audit.record(AuditEntry(mandate_id=mandate.mandate_id, stage="guardrail_pause_offer", decision=str(pause_decision.approved), reason=pause_decision.reason, actor=ActorType.DETERMINISTIC.value))
+                if not pause_decision.approved:
+                    choice.pause_cycles_offered = None
+            copy_context = _build_copy_context(mandate, last_failure_event, None, "n/a", pause_cycles=choice.pause_cycles_offered)
             copy_result = generate_copy(intervention_type=InterventionType(choice.intervention_type), context=copy_context)
             notify_decision = validator.validate_notification(mandate=mandate, intervention_type=choice.intervention_type, now=now)
             audit.record(AuditEntry(mandate_id=mandate.mandate_id, stage="guardrail_notify", decision=str(notify_decision.approved), reason=notify_decision.reason, actor=ActorType.DETERMINISTIC.value))
@@ -149,7 +158,8 @@ def run_mandate(
                 result.notifications.append(Notification(
                     mandate_id=mandate.mandate_id, intervention_type=choice.intervention_type, sent_at=now,
                     related_attempt_number=attempts_made + 1, copy_text=copy_result.text,
-                    grace_period_days=None, screened=True, screen_passed=copy_result.screen_passed,
+                    grace_period_days=None, pause_cycles_offered=choice.pause_cycles_offered,
+                    screened=True, screen_passed=copy_result.screen_passed,
                 ))
             audit.record(AuditEntry(
                 mandate_id=mandate.mandate_id, stage="stopping_rule", decision="stop",

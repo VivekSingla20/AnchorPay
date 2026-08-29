@@ -332,3 +332,16 @@ UNVERIFIED_STOPPING_RULE_MAX_DAYS_SINCE_FIRST_FAILURE = 21  # ASSUMPTIONS.md #A4
 # INV-10 asserts this ceiling holds. See ASSUMPTIONS.md #A7.
 MERCHANT_ALLOWED_GRACE_PERIOD_DAYS: tuple[int, ...] = (1, 2, 3)
 MERCHANT_GRACE_PERIOD_CEILING_DAYS = 3
+
+# A likely-intentional-nonpayment verdict used to route to a bare
+# cancellation confirmation only — a binary "assume they're gone" response.
+# Industry dunning practice (Chargebee: "instead of cancelling due to
+# non-payment, create a flexible payment plan"; multiple 2026 churn
+# playbooks: "replace the delete button with pause... options") treats a
+# customer who stops paying as still a customer, not a lost cause — see
+# DECISIONS.md ADR-012. This allowlist is the SAME governance pattern as
+# the grace-period one above (Razorpay principle 2: never an invented
+# number), applied to a pause offered ALONGSIDE, never instead of, an
+# equally prominent option to actually cancel. See ASSUMPTIONS.md #A11.
+MERCHANT_ALLOWED_PAUSE_CYCLES: tuple[int, ...] = (1, 2, 3)
+MERCHANT_PAUSE_CYCLES_CEILING = 3

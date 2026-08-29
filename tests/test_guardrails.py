@@ -80,6 +80,13 @@ def test_validate_grace_period_enforces_allowlist_and_ceiling() -> None:
     assert not validator.validate_grace_period(0).approved
 
 
+def test_validate_pause_offer_enforces_allowlist_and_ceiling() -> None:
+    for cycles in RC.MERCHANT_ALLOWED_PAUSE_CYCLES:
+        assert validator.validate_pause_offer(cycles).approved
+    assert not validator.validate_pause_offer(RC.MERCHANT_PAUSE_CYCLES_CEILING + 1).approved
+    assert not validator.validate_pause_offer(0).approved
+
+
 def test_dark_pattern_screen_flags_each_category() -> None:
     examples = {
         "false_urgency": "Act now — this offer expires in 10 minutes!",
@@ -104,10 +111,10 @@ def test_every_deterministic_template_passes_the_dark_pattern_screen() -> None:
     """copy_generator.py's docstring promises this holds — enforced here so
     it can never silently regress when a template is edited."""
     sample_context = {
-        "merchant_label": "your merchant", "amount_rupees": "500.00", "window_label": "13:00-17:00",
+        "merchant_label": "merchant", "amount_rupees": "500.00", "window_label": "13:00-17:00",
         "date_label": "24 Aug 2026", "failure_explanation": "a payment issue",
         "next_step": "We will automatically retry within your mandate's remaining attempts.",
-        "short_url_label": "your Razorpay payment link",
+        "short_url_label": "your Razorpay payment link", "pause_cycles": 1,
     }
     for intervention_type, template in _TEMPLATES.items():
         text = template.format(**sample_context) if template else ""

@@ -196,6 +196,9 @@ def check_inv10_grace_period_ceiling(notifications: list[Notification]) -> list[
         if n.grace_period_days is not None:
             if n.grace_period_days not in RC.MERCHANT_ALLOWED_GRACE_PERIOD_DAYS or n.grace_period_days > RC.MERCHANT_GRACE_PERIOD_CEILING_DAYS:
                 out.append(Violation("INV-10", n.mandate_id, f"grace_period_days={n.grace_period_days} outside allowlist {RC.MERCHANT_ALLOWED_GRACE_PERIOD_DAYS}"))
+        if n.pause_cycles_offered is not None:
+            if n.pause_cycles_offered not in RC.MERCHANT_ALLOWED_PAUSE_CYCLES or n.pause_cycles_offered > RC.MERCHANT_PAUSE_CYCLES_CEILING:
+                out.append(Violation("INV-10", n.mandate_id, f"pause_cycles_offered={n.pause_cycles_offered} outside allowlist {RC.MERCHANT_ALLOWED_PAUSE_CYCLES}"))
     return out
 
 

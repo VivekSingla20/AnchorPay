@@ -85,6 +85,27 @@ Maps directly onto `src/`:
 `src/orchestrator.py` wires all ten stages together for the ENGINE strategy
 only — see §6 below for why baselines deliberately don't reuse it.
 
+## 3a. Narration layer — batch/escalation-level, not per-attempt
+
+Two more LLM-assisted modules exist outside the per-mandate pipeline above,
+because they operate on a DIFFERENT unit of work — the whole batch, or one
+already-finalised escalation — not a single retry decision:
+
+| Module | Reads | Writes | Never does |
+|---|---|---|---|
+| `intervene/escalation_brief.py` | one mandate's already-final audit trail | a 1-2 sentence note for the human who receives an `escalate_to_support` case | re-open or second-guess the retryability verdict |
+| `eval/batch_summary.py` | `eval/run_eval.py`'s already-computed metrics dict | one narrative paragraph atop `EVALUATION.md` | compute, alter, or round a single number itself |
+
+Same contract as every LLM-assisted stage in the core pipeline: structured
+output, Pydantic-validated, a deterministic templated fallback if the LLM
+is off/unreachable/invalid, and the `actor` field on every output says
+which path ran. This is Build Spec §5.4's explicitly permitted (and, until
+now, unbuilt) "summarising the batch for a human reader" — added
+specifically because it augments a human reviewer without deciding
+anything, the same posture as Razorpay's own Oncall Agent (Domain Context
+§1.3: "the agent investigates but does not make the judgment call"). See
+DECISIONS.md ADR-011.
+
 ## 4. Independence of the guardrail layer
 
 This is the single most important structural property in the codebase, and

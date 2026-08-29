@@ -27,7 +27,7 @@
   {
     "scenario": "6_clock_boundary_edge_cases",
     "passed": true,
-    "detail": "13:00 boundary: scheduled_at=1798014136 legal=True; 23:59:50 near-midnight: scheduled_at=1798050590 legal=True (India has no DST \u2014 not applicable)"
+    "detail": "13:00 boundary: scheduled_at=1798021607 legal=True; 23:59:50 near-midnight: scheduled_at=1798050590 legal=True (India has no DST \u2014 not applicable)"
   },
   {
     "scenario": "7_duplicate_webhook_delivery",

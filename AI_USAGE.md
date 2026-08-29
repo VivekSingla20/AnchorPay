@@ -172,13 +172,30 @@ just read it.
 
 See `EVALUATION.md`'s "LLM cost" section for the current, committed numbers
 (`RECOVERY_ENGINE_USE_LLM=false`, Rs 0.00, 0 tokens, 0 calls — the
-deterministic fallback path for every classify/intervene/copy decision).
-Enabling `RECOVERY_ENGINE_USE_LLM=true` with a real `ANTHROPIC_API_KEY` and
-re-running `python -m eval.run_eval` would report real token/cost figures
-in the same section, satisfying Razorpay Agent Studio principle 7
-("transparent pricing / cost") for the engine's own operation — this was
-not done for the committed submission, to keep `make eval` reproducible
-without secrets on a clean clone.
+deterministic fallback path for every classify/intervene/copy/narration
+decision). That section reads real call counts from
+`src.classify.llm_client.get_usage_stats()` — an in-process counter every
+`call_structured` invocation updates — rather than a hardcoded sentence, so
+enabling `RECOVERY_ENGINE_USE_LLM=true` with a real `ANTHROPIC_API_KEY` and
+re-running `python -m eval.run_eval` reports genuinely different numbers,
+satisfying Razorpay Agent Studio principle 7 ("transparent pricing / cost")
+for real. Left off for the committed submission to keep `make eval`
+reproducible without secrets on a clean clone.
+
+## Where "why isn't this more agentic" led to two real additions
+
+Mid-build, the operator pushed back directly: the pipeline's LLM stages are
+deliberately narrow, and asked whether that meant the project was under-
+using AI rather than appropriately bounding it. The honest answer was
+"both partially" — three LLM integration points already existed, but Build
+Spec §5.4's explicitly permitted "summarising the batch for a human
+reader" had never actually been built. That gap became
+`intervene/escalation_brief.py` and `eval/batch_summary.py`: LLM-assisted
+narration that reads an already-decided outcome and explains it to a
+human, never re-opening the decision itself. This is the right way to
+respond to "make it more advanced" pressure on a system where Build Spec
+§0.1/§5.4 forbid an LLM from deciding anything money-related — add MORE
+augmentation, never move a money decision INTO the model.
 
 ## A note on the commit history
 

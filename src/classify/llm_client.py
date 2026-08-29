@@ -45,6 +45,33 @@ class LlmCallResult:
     error: Optional[str]
 
 
+@dataclass
+class UsageStats:
+    """Real, accumulated usage across every call_structured invocation in the
+    current process — this is what makes the "LLM cost" section of
+    EVALUATION.md a measurement instead of a hardcoded sentence (Razorpay
+    Agent Studio principle 7, "transparent pricing / cost")."""
+
+    call_count: int = 0
+    ok_count: int = 0
+    fallback_count: int = 0
+    total_latency_ms: float = 0.0
+
+
+_usage = UsageStats()
+
+
+def get_usage_stats() -> UsageStats:
+    return UsageStats(**vars(_usage))
+
+
+def reset_usage_stats() -> None:
+    """Test/eval-run isolation — call between independent runs, same spirit
+    as ingest/normaliser.py's reset_idempotency_cache()."""
+    global _usage
+    _usage = UsageStats()
+
+
 def llm_enabled() -> bool:
     return os.getenv("RECOVERY_ENGINE_USE_LLM", "false").strip().lower() in ("1", "true", "yes")
 
@@ -61,6 +88,23 @@ def _get_client():
 
 
 def call_structured(
+    *,
+    system_prompt: str,
+    user_prompt: str,
+    response_model: Type[T],
+) -> LlmCallResult:
+    """Public entry point — every caller goes through here so usage is
+    tracked in exactly one place, regardless of which of
+    _call_structured_uncounted's several return paths fired."""
+    result = _call_structured_uncounted(system_prompt=system_prompt, user_prompt=user_prompt, response_model=response_model)
+    _usage.call_count += 1
+    _usage.ok_count += int(result.ok)
+    _usage.fallback_count += int(not result.ok)
+    _usage.total_latency_ms += result.latency_ms
+    return result
+
+
+def _call_structured_uncounted(
     *,
     system_prompt: str,
     user_prompt: str,

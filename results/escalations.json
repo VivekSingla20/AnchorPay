@@ -1,106 +1,158 @@
 [
   {
     "mandate_id": "mandate_623226dac5c94e",
-    "reason": "reason requires investigation per Razorpay's own guidance; route to support rather than guess."
+    "reason": "reason requires investigation per Razorpay's own guidance; route to support rather than guess.",
+    "brief": "Rs 4,156.67, reason='vpa_resolution_failed'. Gate rationale: reason requires investigation per Razorpay's own guidance; route to support rather than guess.",
+    "brief_actor": "deterministic"
   },
   {
     "mandate_id": "mandate_3cd9239dfd2f2f",
-    "reason": "reason requires investigation per Razorpay's own guidance; route to support rather than guess."
+    "reason": "reason requires investigation per Razorpay's own guidance; route to support rather than guess.",
+    "brief": "Rs 1,857.35, reason='credit_failed'. Gate rationale: reason requires investigation per Razorpay's own guidance; route to support rather than guess.",
+    "brief_actor": "deterministic"
   },
   {
     "mandate_id": "mandate_2c0b1f62211d96",
-    "reason": "reason requires investigation per Razorpay's own guidance; route to support rather than guess."
+    "reason": "reason requires investigation per Razorpay's own guidance; route to support rather than guess.",
+    "brief": "Rs 126,319.42, reason='credit_failed'. Gate rationale: reason requires investigation per Razorpay's own guidance; route to support rather than guess.",
+    "brief_actor": "deterministic"
   },
   {
     "mandate_id": "mandate_6a7ba7321637ac",
-    "reason": "reason requires investigation per Razorpay's own guidance; route to support rather than guess."
+    "reason": "reason requires investigation per Razorpay's own guidance; route to support rather than guess.",
+    "brief": "Rs 1,256.06, reason='credit_failed'. Gate rationale: reason requires investigation per Razorpay's own guidance; route to support rather than guess.",
+    "brief_actor": "deterministic"
   },
   {
     "mandate_id": "mandate_2bef345c024455",
-    "reason": "reason requires investigation per Razorpay's own guidance; route to support rather than guess."
+    "reason": "reason requires investigation per Razorpay's own guidance; route to support rather than guess.",
+    "brief": "Rs 200.37, reason='vpa_resolution_failed'. Gate rationale: reason requires investigation per Razorpay's own guidance; route to support rather than guess.",
+    "brief_actor": "deterministic"
   },
   {
     "mandate_id": "mandate_96760df0032807",
-    "reason": "reason requires investigation per Razorpay's own guidance; route to support rather than guess."
+    "reason": "reason requires investigation per Razorpay's own guidance; route to support rather than guess.",
+    "brief": "Rs 422.06, reason='credit_failed'. Gate rationale: reason requires investigation per Razorpay's own guidance; route to support rather than guess.",
+    "brief_actor": "deterministic"
   },
   {
     "mandate_id": "mandate_41cb4da41f328d",
-    "reason": "reason requires investigation per Razorpay's own guidance; route to support rather than guess."
+    "reason": "reason requires investigation per Razorpay's own guidance; route to support rather than guess.",
+    "brief": "Rs 10,561.62, reason='vpa_resolution_failed'. Gate rationale: reason requires investigation per Razorpay's own guidance; route to support rather than guess.",
+    "brief_actor": "deterministic"
   },
   {
     "mandate_id": "mandate_fc73af792d81d0",
-    "reason": "reason requires investigation per Razorpay's own guidance; route to support rather than guess."
+    "reason": "reason requires investigation per Razorpay's own guidance; route to support rather than guess.",
+    "brief": "Rs 116,070.96, reason='credit_failed'. Gate rationale: reason requires investigation per Razorpay's own guidance; route to support rather than guess.",
+    "brief_actor": "deterministic"
   },
   {
     "mandate_id": "mandate_282404e84c409f",
-    "reason": "reason requires investigation per Razorpay's own guidance; route to support rather than guess."
+    "reason": "reason requires investigation per Razorpay's own guidance; route to support rather than guess.",
+    "brief": "Rs 1,669.69, reason='__unknown__'. Gate rationale: reason requires investigation per Razorpay's own guidance; route to support rather than guess.",
+    "brief_actor": "deterministic"
   },
   {
     "mandate_id": "mandate_9836b5816ad350",
-    "reason": "reason requires investigation per Razorpay's own guidance; route to support rather than guess."
+    "reason": "reason requires investigation per Razorpay's own guidance; route to support rather than guess.",
+    "brief": "Rs 57,149.14, reason='credit_failed'. Gate rationale: reason requires investigation per Razorpay's own guidance; route to support rather than guess.",
+    "brief_actor": "deterministic"
   },
   {
     "mandate_id": "mandate_487802bdac2d36",
-    "reason": "reason requires investigation per Razorpay's own guidance; route to support rather than guess."
+    "reason": "reason requires investigation per Razorpay's own guidance; route to support rather than guess.",
+    "brief": "Rs 819.35, reason='vpa_resolution_failed'. Gate rationale: reason requires investigation per Razorpay's own guidance; route to support rather than guess.",
+    "brief_actor": "deterministic"
   },
   {
     "mandate_id": "mandate_6fcde4b3ff8ea7",
-    "reason": "reason requires investigation per Razorpay's own guidance; route to support rather than guess."
+    "reason": "reason requires investigation per Razorpay's own guidance; route to support rather than guess.",
+    "brief": "Rs 219.46, reason='vpa_resolution_failed'. Gate rationale: reason requires investigation per Razorpay's own guidance; route to support rather than guess.",
+    "brief_actor": "deterministic"
   },
   {
     "mandate_id": "mandate_13f4d886110a33",
-    "reason": "reason requires investigation per Razorpay's own guidance; route to support rather than guess."
+    "reason": "reason requires investigation per Razorpay's own guidance; route to support rather than guess.",
+    "brief": "Rs 21,439.87, reason='vpa_resolution_failed'. Gate rationale: reason requires investigation per Razorpay's own guidance; route to support rather than guess.",
+    "brief_actor": "deterministic"
   },
   {
     "mandate_id": "mandate_0041c4c018c2e0",
-    "reason": "reason requires investigation per Razorpay's own guidance; route to support rather than guess."
+    "reason": "reason requires investigation per Razorpay's own guidance; route to support rather than guess.",
+    "brief": "Rs 104,504.22, reason='credit_failed'. Gate rationale: reason requires investigation per Razorpay's own guidance; route to support rather than guess.",
+    "brief_actor": "deterministic"
   },
   {
     "mandate_id": "mandate_7c29ba04680fd6",
-    "reason": "reason requires investigation per Razorpay's own guidance; route to support rather than guess."
+    "reason": "reason requires investigation per Razorpay's own guidance; route to support rather than guess.",
+    "brief": "Rs 59,649.15, reason='credit_failed'. Gate rationale: reason requires investigation per Razorpay's own guidance; route to support rather than guess.",
+    "brief_actor": "deterministic"
   },
   {
     "mandate_id": "mandate_322820d47680da",
-    "reason": "reason requires investigation per Razorpay's own guidance; route to support rather than guess."
+    "reason": "reason requires investigation per Razorpay's own guidance; route to support rather than guess.",
+    "brief": "Rs 20,330.39, reason='credit_failed'. Gate rationale: reason requires investigation per Razorpay's own guidance; route to support rather than guess.",
+    "brief_actor": "deterministic"
   },
   {
     "mandate_id": "mandate_9bca7a2980cb33",
-    "reason": "reason requires investigation per Razorpay's own guidance; route to support rather than guess."
+    "reason": "reason requires investigation per Razorpay's own guidance; route to support rather than guess.",
+    "brief": "Rs 1,507.09, reason='credit_failed'. Gate rationale: reason requires investigation per Razorpay's own guidance; route to support rather than guess.",
+    "brief_actor": "deterministic"
   },
   {
     "mandate_id": "mandate_6d9a9aac59b1db",
-    "reason": "reason requires investigation per Razorpay's own guidance; route to support rather than guess."
+    "reason": "reason requires investigation per Razorpay's own guidance; route to support rather than guess.",
+    "brief": "Rs 3,611.25, reason='credit_failed'. Gate rationale: reason requires investigation per Razorpay's own guidance; route to support rather than guess.",
+    "brief_actor": "deterministic"
   },
   {
     "mandate_id": "mandate_e68fba96be35ee",
-    "reason": "reason requires investigation per Razorpay's own guidance; route to support rather than guess."
+    "reason": "reason requires investigation per Razorpay's own guidance; route to support rather than guess.",
+    "brief": "Rs 406.37, reason='vpa_resolution_failed'. Gate rationale: reason requires investigation per Razorpay's own guidance; route to support rather than guess.",
+    "brief_actor": "deterministic"
   },
   {
     "mandate_id": "mandate_1440f767f258d2",
-    "reason": "reason requires investigation per Razorpay's own guidance; route to support rather than guess."
+    "reason": "reason requires investigation per Razorpay's own guidance; route to support rather than guess.",
+    "brief": "Rs 14,507.67, reason='credit_failed'. Gate rationale: reason requires investigation per Razorpay's own guidance; route to support rather than guess.",
+    "brief_actor": "deterministic"
   },
   {
     "mandate_id": "mandate_5286f10bc39282",
-    "reason": "reason requires investigation per Razorpay's own guidance; route to support rather than guess."
+    "reason": "reason requires investigation per Razorpay's own guidance; route to support rather than guess.",
+    "brief": "Rs 106,840.09, reason='credit_failed'. Gate rationale: reason requires investigation per Razorpay's own guidance; route to support rather than guess.",
+    "brief_actor": "deterministic"
   },
   {
     "mandate_id": "mandate_0ba9b983a17255",
-    "reason": "reason requires investigation per Razorpay's own guidance; route to support rather than guess."
+    "reason": "reason requires investigation per Razorpay's own guidance; route to support rather than guess.",
+    "brief": "Rs 831.46, reason='vpa_resolution_failed'. Gate rationale: reason requires investigation per Razorpay's own guidance; route to support rather than guess.",
+    "brief_actor": "deterministic"
   },
   {
     "mandate_id": "mandate_e7ea2fc6c12e25",
-    "reason": "reason requires investigation per Razorpay's own guidance; route to support rather than guess."
+    "reason": "reason requires investigation per Razorpay's own guidance; route to support rather than guess.",
+    "brief": "Rs 804.55, reason='vpa_resolution_failed'. Gate rationale: reason requires investigation per Razorpay's own guidance; route to support rather than guess.",
+    "brief_actor": "deterministic"
   },
   {
     "mandate_id": "mandate_190d8102db3b6a",
-    "reason": "reason requires investigation per Razorpay's own guidance; route to support rather than guess."
+    "reason": "reason requires investigation per Razorpay's own guidance; route to support rather than guess.",
+    "brief": "Rs 1,256.85, reason='credit_failed'. Gate rationale: reason requires investigation per Razorpay's own guidance; route to support rather than guess.",
+    "brief_actor": "deterministic"
   },
   {
     "mandate_id": "mandate_612a6574b8cdb3",
-    "reason": "reason requires investigation per Razorpay's own guidance; route to support rather than guess."
+    "reason": "reason requires investigation per Razorpay's own guidance; route to support rather than guess.",
+    "brief": "Rs 210.72, reason='__unknown__'. Gate rationale: reason requires investigation per Razorpay's own guidance; route to support rather than guess.",
+    "brief_actor": "deterministic"
   },
   {
     "mandate_id": "mandate_9750ea06c79047",
-    "reason": "reason requires investigation per Razorpay's own guidance; route to support rather than guess."
+    "reason": "reason requires investigation per Razorpay's own guidance; route to support rather than guess.",
+    "brief": "Rs 1,743.46, reason='credit_failed'. Gate rationale: reason requires investigation per Razorpay's own guidance; route to support rather than guess.",
+    "brief_actor": "deterministic"
   }
 ]

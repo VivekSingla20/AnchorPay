@@ -233,3 +233,49 @@ would consume Razorpay's live Downtime API (SOURCES.md §5) instead.
 what THIS demonstrative downtime pattern's effect is, not what a real
 bank's typical outage frequency would do to recovery. See EVALUATION.md's
 ablation table and its own caveat line.
+
+---
+
+### ADR-011 — Narration (escalation briefs, batch summary) added as LLM-assisted, never decision-assisted
+
+**Context.** Mid-build, the operator directly questioned whether the
+project under-used AI — the pipeline's three original LLM touch points
+(classifier, intervention selector, copy generator) are all deliberately
+narrow, which can look, from outside, like "not enough AI" rather than
+"AI kept away from money decisions on purpose." Build Spec §5.4 lists a
+fourth permitted LLM use case this project had never built: "summarising
+the batch for a human reader."
+
+**Decision.** Add exactly two new modules, both read-only narrators over
+an ALREADY-FINAL result:
+- `intervene/escalation_brief.py` — turns one escalated mandate's audit
+  trail into a 1-2 sentence note for the human who investigates it next.
+- `eval/batch_summary.py` — turns `eval/run_eval.py`'s already-computed
+  metrics dict into one narrative paragraph atop `EVALUATION.md`.
+
+Both follow the exact contract every existing LLM-assisted stage already
+uses (structured Pydantic schema, deterministic templated fallback,
+`actor` field naming which path ran) — no new pattern was invented for
+this.
+
+**Rejected alternative.** Add a "Planner" stage mirroring Bumblebee's
+shape (Domain Context §1.3) that decides which data sources to fetch.
+Rejected: Bumblebee's planner exists because it has multiple INDEPENDENT
+data sources to fetch in parallel; this pipeline's stages are sequential
+dependencies (you cannot bank-health-score before you know the reason is
+retryable), so a planner stage would have nothing genuine to plan — it
+would be complexity added to look more "agentic" rather than because the
+problem needs it, which is explicitly named as an anti-pattern (Build Spec
+§13 / evaluation criteria §11).
+
+**Why this is the correct response to "make it more advanced,"
+specifically:** every other way to add more LLM usage here (having it
+re-confirm an already-correct classification, having it choose the
+schedule, having it decide whether to stop) would mean moving a money
+decision INTO the model — forbidden outright by Build Spec §0.1/§5.4.
+Narration is the one direction growth was still available in: augmenting
+the human who reads the output, never touching the decision itself. See
+`AI_USAGE.md`'s "Where 'why isn't this more agentic' led to two real
+additions" for the fuller account, and `ARCHITECTURE.md` §3a for where
+these sit relative to the core pipeline.
+

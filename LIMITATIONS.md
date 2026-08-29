@@ -75,8 +75,9 @@ them (Build Spec Part 14).
    `EVALUATION.md` was generated with it off.** This is a deliberate
    reproducibility choice (Build Spec: "test the clean-clone path... no
    secrets"), not an oversight — see `AI_USAGE.md` for the LLM-enabled cost
-   projection. Consequence: the LLM-assisted classify/intervene/copy paths
-   are exercised by `eval/scenarios.py` and unit tests using mocked
+   projection. Consequence: the LLM-assisted classify/intervene/copy/
+   narration paths (`intervene/escalation_brief.py`, `eval/batch_summary.py`
+   included) are exercised by `eval/scenarios.py` and unit tests using mocked
    responses, not against a real model's actual output distribution, in
    this submission's committed numbers.
 

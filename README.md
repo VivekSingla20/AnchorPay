@@ -118,7 +118,7 @@ alternative: [`ARCHITECTURE.md`](ARCHITECTURE.md).
 | 4 | Every action validated before execution | `guardrails/validator.py` re-checks legality independently, at the moment of execution, not only at schedule time (`ARCHITECTURE.md` §4) |
 | 5 | Consent rules on customer communication | An opt-out halts the ENTIRE sequence, not just messages (`DECISIONS.md` ADR-007); re-checked at send/execute time, not schedule time (Failure Injection #8, `FAILURES.md`) |
 | 6 | No false urgency / dark patterns | `guardrails/dark_pattern_screen.py` screens every generated notice against 6 named categories; rejections are logged and reported, not hidden |
-| 7 | Transparent pricing/cost | `EVALUATION.md`'s LLM-cost section reports Rs/tokens/calls per run, always, even when it's Rs 0.00 |
+| 7 | Transparent pricing/cost | `EVALUATION.md`'s LLM-cost section reads real call counts from `llm_client.get_usage_stats()` every run, always, even when it's Rs 0.00 |
 | 8 | Certification & accountability | The full test suite + `eval/scenarios.py`'s 8 failure injections are re-run on every change, not measured once |
 | 9 | Data privacy & compliance | No name/email/phone field exists anywhere in the data model (`entities.py`) — INV-12 holds structurally, not by a redaction step that could be forgotten |
 

@@ -28,6 +28,7 @@ from data.generate import read_jsonl
 from eval import baselines
 from src.audit.log import AuditLog
 from src.guardrails import invariants
+from src.intervene import escalation_brief
 from src.orchestrator import run_mandate
 
 _REPO_ROOT = Path(__file__).resolve().parents[1]
@@ -65,6 +66,17 @@ def cmd_explain(args: argparse.Namespace) -> None:
     result = run_mandate(mandate=mandate, first_failure_event=event, audit=audit)
 
     print(audit.explain(mandate.mandate_id))
+
+    escalated_entry = next(
+        (e for e in audit.all() if e.stage == "intervention_selector" and e.decision == "escalate_to_support"), None
+    )
+    if escalated_entry is not None:
+        brief_text, actor = escalation_brief.generate(
+            mandate_id=mandate.mandate_id, reason_value=event.reason.value,
+            amount_rupees=mandate.amount_paise / 100, gate_rationale=escalated_entry.reason,
+        )
+        print(f"\nEscalation brief for support (actor: {actor}): {brief_text}")
+
     print()
     print(f"Final status: {result.final_status}")
     print(f"Rupees recovered: {result.recovered_paise / 100:,.2f} of {mandate.amount_paise / 100:,.2f} at risk")

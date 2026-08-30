@@ -36,6 +36,7 @@ from typing import Optional
 
 from data.generate import REFERENCE_NOW, read_jsonl
 from eval import baselines, batch_summary
+from src.audit import kill_switch
 from src.audit.log import AuditLog
 from src.classify import llm_client
 from src.domain.entities import Attempt, FailureEvent, Mandate, Notification
@@ -108,6 +109,7 @@ class RunRecord:
 
 def _run_strategy(strategy: str, records: list[tuple[Mandate, FailureEvent]]) -> list[RunRecord]:
     out = []
+    killed_ids = kill_switch.load_killed_mandate_ids()  # Razorpay principle 1: one-tap kill switch, checked by every strategy that reaches the engine
     for mandate, event in records:
         # Each strategy gets its OWN deep-ish copy of the mandate (via
         # model_copy) so one strategy's in-run mutations (consecutive
@@ -125,11 +127,11 @@ def _run_strategy(strategy: str, records: list[tuple[Mandate, FailureEvent]]) ->
             out.append(RunRecord(m, r.attempts, r.notifications, r.final_status, r.recovered_paise))
         elif strategy == "B3_reason_aware":
             audit = AuditLog()
-            r = run_mandate(mandate=m, first_failure_event=event, audit=audit, downtime_records=_DOWNTIME_RECORDS, use_salary_cycle_heuristic=False, use_bank_health_heuristic=False)
+            r = run_mandate(mandate=m, first_failure_event=event, audit=audit, downtime_records=_DOWNTIME_RECORDS, use_salary_cycle_heuristic=False, use_bank_health_heuristic=False, kill_switch_ids=killed_ids)
             out.append(RunRecord(m, r.attempts, r.notifications, r.final_status, r.recovered_paise, r.stopped_reason, audit.all()))
         elif strategy == "engine":
             audit = AuditLog()
-            r = run_mandate(mandate=m, first_failure_event=event, audit=audit, downtime_records=_DOWNTIME_RECORDS)
+            r = run_mandate(mandate=m, first_failure_event=event, audit=audit, downtime_records=_DOWNTIME_RECORDS, kill_switch_ids=killed_ids)
             out.append(RunRecord(m, r.attempts, r.notifications, r.final_status, r.recovered_paise, r.stopped_reason, audit.all()))
         else:
             raise ValueError(f"unknown strategy {strategy!r}")

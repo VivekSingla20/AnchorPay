@@ -81,6 +81,30 @@ them (Build Spec Part 14).
    responses, not against a real model's actual output distribution, in
    this submission's committed numbers.
 
+15. **Review-first mode and the kill switch (`DECISIONS.md` ADR-013) are a
+    preview-and-re-invoke pattern over a stateless CLI, not a persistent
+    multi-user approval workflow.** `approve` recomputes the whole
+    pipeline from scratch rather than resuming stored state, because
+    nothing in this project runs as a long-lived service a human could
+    click "approve" against in real time. The kill switch
+    (`src/audit/kill_switch.py`) also fails OPEN (treats a missing/corrupt
+    `results/killed_mandates.json` as "nothing is killed") rather than
+    fail-closed — reasoned about explicitly in ADR-013, not a silent
+    default. A production deployment handling real money at real scale
+    should very likely fail closed on a kill-switch read error instead.
+
+16. **This project is a single-merchant simulation with no multi-tenant
+    data model.** DPDPA 2023 (India's Digital Personal Data Protection
+    Act) is referenced in the README's principles table because this
+    project's data-minimisation posture (no name/email/phone field exists
+    anywhere in `entities.py`) genuinely satisfies DPDPA's minimisation
+    principle structurally. But per-merchant data scoping and
+    cross-tenant isolation — real DPDPA-relevant concerns the moment a
+    system serves more than one merchant — are not modelled at all here;
+    there is exactly one implicit merchant throughout. Any production
+    version of this system would need a real multi-tenant data boundary
+    reviewed against DPDPA before serving more than one merchant.
+
 ## Explicitly out of scope (Tier 3, "mention in future work, don't build" —
 Domain Context Part 5)
 

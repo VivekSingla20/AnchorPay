@@ -1,0 +1,35 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # secret_scan.py needs full history via `git ls-files`
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Secret scan
+        run: python scripts/secret_scan.py
+
+      - name: Generate synthetic data (seeded, reproducible)
+        run: python -m data.generate --seed 42 --count 800
+
+      - name: Run test suite
+        run: python -m pytest -q
+
+      - name: Run failure injection scenarios
+        run: python -m eval.scenarios
+
+      - name: Run evaluation harness
+        run: python -m eval.run_eval

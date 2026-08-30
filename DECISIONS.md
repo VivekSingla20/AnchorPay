@@ -351,3 +351,82 @@ and India's Dark Patterns Guidelines prohibit. This engine sends exactly
 ONE message with all options presented together, then stops — consistent
 with principle 5's "a no ends the sequence, no escalation loop."
 
+### ADR-013 — Review-first mode and a kill switch, as a preview-and-re-invoke pattern rather than a stateful approval queue
+
+**Context.** Razorpay Agent Studio principle 1 ("merchant always in
+control") names two specific mechanisms this project had not yet built:
+a review-first mode that holds actions for human approval before
+anything irreversible happens, and a one-tap kill switch that stops all
+future action for a specific mandate. A completeness audit against the
+principles table (triggered by the operator asking "is it now fully
+completed?") found this gap directly — it wasn't inferred, it was
+checked by grepping this project's own docs for "review-first" and
+"kill switch" and finding nothing.
+
+**Decision — review-first.** `run_mandate()` takes a `review_first: bool`
+flag. When set, the loop runs the full deterministic pipeline (ingest,
+retryability gate, allocator, intervention selection, guardrail check)
+exactly as normal, but stops one step BEFORE the side-effecting action
+(`simulator.execute_with_guardrail()` for a debit, or the notification
+send) and returns a `PendingApproval` object instead — carrying the
+human-readable description of what would happen, and an `irreversible`
+flag (`True` for a debit attempt, `False` for a notification-only step).
+Nothing is scheduled, executed, or sent. The CLI's `explain --review-first`
+prints this and suggests the exact `approve` command to run next.
+`approve` re-invokes the SAME pipeline from scratch with `review_first`
+now `False` — recomputation, not resumption from stored state — and, for
+an irreversible action, refuses outright unless `--confirm-irreversible`
+is also passed (verified manually: refuses with a clear message without
+it, executes and prints the full decision trail with it). This is a
+literal double confirmation, not a slogan: two separate CLI invocations,
+the second requiring an explicit extra flag, standing between "reviewed"
+and "money moves."
+
+**Decision — kill switch.** `src/audit/kill_switch.py` persists a flat
+JSON list of killed mandate ids at `results/killed_mandates.json`
+(`kill_mandate()`, `revive_mandate()`, `load_killed_mandate_ids()`).
+`run_mandate()` checks membership in this set at the very TOP of its
+loop — before even the opt-out check, which was previously the
+earliest possible stop — and if present, records an audit entry
+attributed to `ActorType.HUMAN_OPERATOR` and halts with no further
+action of any kind. Verified manually: `kill` followed by `explain` on
+the same mandate shows exactly one audit line
+(`[stopping_rule] stop - kill switch activated...`) and zero attempts,
+notifications, or rupees recovered; `revive` restores normal processing.
+Wired into `eval/run_eval.py` too (`_run_strategy` loads the kill set
+once per run and passes it to both the engine and B3 strategies) so the
+mechanism is exercised by the same code path the batch evaluation uses,
+not a CLI-only side path — confirmed via `git diff` on `results/metrics.json`
+after re-running the harness that only the non-deterministic
+`wall_clock_seconds`/`throughput_records_per_min` fields changed; every
+financial and violation figure was byte-identical, meaning the wiring
+introduced zero behavioural change when the kill list is empty (the
+default and committed state).
+
+**What this deliberately is NOT.** Neither mechanism is a persistent,
+multi-user approval workflow with its own database, queue, or UI. This
+project's whole shape is a batch simulator plus a read-only CLI over a
+static ledger of synthetic mandates — there is no running service for a
+human to click "approve" against in real time. The honest implementation
+of the PRINCIPLE (nothing irreversible happens without an explicit,
+separately-confirmed human step; any single mandate can be stopped
+outright and later resumed) is a preview-then-re-invoke pattern over the
+same deterministic pipeline, not a workflow engine. Building the latter
+was rejected as scope that doesn't match what a synthetic-data batch
+evaluation project can honestly claim to demonstrate — see
+`LIMITATIONS.md`.
+
+**Rejected alternative — fail-closed kill switch on a corrupt/unreadable
+state file.** `load_killed_mandate_ids()` returns an empty set (fails
+OPEN, meaning "nothing is killed") if `results/killed_mandates.json` is
+missing, unreadable, or contains invalid JSON, rather than raising and
+halting everything. This looks backwards for a safety control at first
+glance, but the alternative — a malformed file silently freezing ALL
+mandate processing — is a worse failure mode for a file this project
+does not treat as security-critical (it holds no money-moving
+authority itself; it only ever REMOVES actions, never grants them). A
+production system would likely want the opposite (fail closed, alert an
+operator) for a real distributed kill switch; that tradeoff is noted
+here rather than silently chosen.
+
+

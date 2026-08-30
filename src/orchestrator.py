@@ -29,6 +29,22 @@ from src.policy.bank_health import DowntimeRecord
 
 
 @dataclass
+class PendingApproval:
+    """Review-first mode (Razorpay principle 1: "agent does all work, holds
+    output for human approval"): the proposed action, held instead of run.
+    `irreversible=True` for an execution (money moves); `False` for a
+    notification (a message can be a mistake, a debit is much harder to
+    undo) — this is what "irreversible actions require double confirmation"
+    (principle 1) is keyed on. See src/cli.py's `approve` command."""
+
+    mandate_id: str
+    action_type: str  # "execute" | "notify"
+    description: str
+    irreversible: bool
+    attempt_number: int
+
+
+@dataclass
 class MandateRunResult:
     mandate: Mandate
     attempts: list[Attempt] = field(default_factory=list)
@@ -36,6 +52,7 @@ class MandateRunResult:
     final_status: str = "unknown"
     recovered_paise: int = 0
     stopped_reason: str = ""
+    pending_approval: Optional[PendingApproval] = None
 
 
 _REASON_EXPLANATIONS: dict[str, str] = {
@@ -81,6 +98,8 @@ def run_mandate(
     audit: Optional[AuditLog] = None,
     use_salary_cycle_heuristic: bool = True,
     use_bank_health_heuristic: bool = True,
+    kill_switch_ids: Optional[set[str]] = None,
+    review_first: bool = False,
 ) -> MandateRunResult:
     audit = audit if audit is not None else AuditLog()
     result = MandateRunResult(mandate=mandate)
@@ -109,7 +128,20 @@ def run_mandate(
     now = first_failure_event.occurred_at
 
     while True:
-        # Opt-out is checked FIRST, ahead of retryability. Under a regime
+        # The kill switch is checked before EVEN opt-out — a one-tap,
+        # operator-level stop (Razorpay principle 1) always wins over every
+        # other signal, including a legally-scheduled action already in
+        # flight. See audit/kill_switch.py and `src.cli kill`.
+        if kill_switch_ids and mandate.mandate_id in kill_switch_ids:
+            audit.record(AuditEntry(
+                mandate_id=mandate.mandate_id, stage="stopping_rule", decision="stop",
+                reason="kill switch activated for this mandate; no further action of any kind",
+                actor=ActorType.HUMAN_OPERATOR.value,
+            ))
+            result.stopped_reason = "kill switch activated"
+            break
+
+        # Opt-out is checked next, ahead of retryability. Under a regime
         # where every debit carries a mandatory pre/post-debit notice
         # (§2.2), "opt out of contact" while an AutoPay mandate keeps
         # auto-debiting is not a coherent state to serve — the engine could
@@ -219,6 +251,25 @@ def run_mandate(
         # Terminal/investigate/intentional-nonpayment verdicts are handled and
         # returned from further up this loop, before a schedule is even
         # proposed — reaching this point guarantees verdict is RETRYABLE.
+        if review_first:
+            # Razorpay principle 1: "agent does all work, holds output for
+            # human approval." Everything up to here (classify, gate,
+            # allocate, select, draft, screen, guardrail-check the
+            # notification) has already run — only the money-moving
+            # execution itself is held. See src/cli.py's `approve` command
+            # and DECISIONS.md ADR-013.
+            result.pending_approval = PendingApproval(
+                mandate_id=mandate.mandate_id, action_type="execute",
+                description=f"attempt {next_attempt_number} scheduled for {timeutils.to_ist(proposal.scheduled_at).isoformat()} IST ({proposal.rationale})",
+                irreversible=True, attempt_number=next_attempt_number,
+            )
+            audit.record(AuditEntry(
+                mandate_id=mandate.mandate_id, stage="review_first", decision="held_for_approval",
+                reason=result.pending_approval.description, actor=ActorType.HUMAN_OPERATOR.value,
+            ))
+            result.stopped_reason = "held for human approval (review-first mode)"
+            break
+
         outcome = simulator.execute_with_guardrail(
             mandate=mandate, attempt_number=next_attempt_number, scheduled_at=proposal.scheduled_at,
             root_cause_reason=last_failure_event.reason, root_cause_npci_code=last_failure_event.npci_code,
